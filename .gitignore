@@ -16,3 +16,20 @@ _site/
 # counterproductive to check this file into the repository.
 # Details at https://github.com/github/pages-gem/issues/768
 Gemfile.lock
+
+# MkDocs build output
+/site/
+
+# Python stuff
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+.venv/
+*.egg-info/
+
+# OS files
+.DS_Store
+Thumbs.db
