@@ -9,7 +9,8 @@
     !!! tip "Crashes"
         Crashes if not careful
 
-        ### Creates DX12 Device
+    ### Creates DX12 Device
+
     ```cpp
     void CreateDevice();
     ```
