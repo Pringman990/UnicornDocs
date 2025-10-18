@@ -18,14 +18,14 @@ Helper class to handle 3 dimensional arrays.
 
 | Name | Description |
 | ---- | ----------- |
-| [Resize](#Resize) | Resizes the array in all three axis !!! warning Resize will delete all currently stored data and create a new array.  |
+| [Resize](#Resize) | @brief Resizes the array in all three axis !!! warning Resize will delete all currently stored data and create a new array.  |
 
 ## Function Details
 
 ### Resize<a name="Resize"></a>
 !!! function "void Resize(uint32 SizeX, uint32 SizeY, uint32 SizeZ)"
 
-    Resizes the array in all three axis
+    @brief Resizes the array in all three axis
     
     
     !!! warning
