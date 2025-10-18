@@ -29,6 +29,7 @@ Helper class to handle 3 dimensional arrays.
     
     
     !!! warning
-     Resize will delete all currently stored data and create a new array.
+    
+        Resize will delete all currently stored data and create a new array.
     
 
