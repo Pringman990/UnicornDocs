@@ -18,7 +18,7 @@ Helper class to handle 3 dimensional arrays.
 
 | Name | Description |
 | ---- | ----------- |
-| [Resize](#Resize) | Resizes the array in all three axis !!! warning "Attention" Resize will delete all currently stored data and create a new array.  |
+| [Resize](#Resize) | Resizes the array in all three axis #### Admonitions !!! warning "Attention" Resize will delete all currently stored data and create a new array.  |
 
 ## Function Details
 
@@ -26,6 +26,8 @@ Helper class to handle 3 dimensional arrays.
 !!! function "void Resize(uint32 SizeX, uint32 SizeY, uint32 SizeZ)"
 
     Resizes the array in all three axis
+    
+    #### Admonitions
     
     
     !!! warning "Attention"
