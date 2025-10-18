@@ -395,50 +395,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../EditorWindow/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    EditorWindow
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../MemoryTrackingSettings/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    MemoryTrackingSettings
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../ResourcePool/" class="md-nav__link">
         
   
@@ -460,18 +416,51 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../UniqueID64/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../global/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
-    UniqueID64
+    Global
     
   </span>
   
 
-      </a>
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Global
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -553,6 +542,11 @@
 
 <h1 id="array3d">Array3D</h1>
 <p><strong>template&lt;typename Type&gt; class Array3D</strong></p>
+<p>Helper class to handle 3 dimensional arrays.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p>Stores a flat C array.</p>
 <h2 id="functions">Functions</h2>
 <table>
 <thead>
@@ -564,7 +558,7 @@
 <tbody>
 <tr>
 <td><a href="#Resize">Resize</a></td>
-<td><summary> IMPORTANT: Resize will delete all currently stored data and create a new array </summary></td>
+<td>!!! warning "Attention" Resize will delete all currently stored data and create a new array.</td>
 </tr>
 </tbody>
 </table>
@@ -572,9 +566,11 @@
 <h3 id="resize">Resize<a name="Resize"></a></h3>
 <div class="admonition function">
 <p class="admonition-title">void Resize(uint32 SizeX, uint32 SizeY, uint32 SizeZ)</p>
-<p><summary>
-IMPORTANT: Resize will delete all currently stored data and create a new array
-</summary></p>
+<div class="admonition warning">
+<p class="admonition-title">Attention</p>
+<pre><code> Resize will delete all currently stored data and create a new array.
+</code></pre>
+</div>
 </div>
 
 
