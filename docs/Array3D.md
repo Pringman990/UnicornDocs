@@ -7,21 +7,25 @@ generator: doxide
 
 **template&lt;typename Type&gt; class Array3D**
 
+Helper class to handle 3 dimensional arrays.
+
+!!! note
+ Stores a flat C array.
 
 
 ## Functions
 
 | Name | Description |
 | ---- | ----------- |
-| [Resize](#Resize) | <summary> IMPORTANT: Resize will delete all currently stored data and create a new array </summary>  |
+| [Resize](#Resize) |  !!! warning "Attention" Resize will delete all currently stored data and create a new array.  |
 
 ## Function Details
 
 ### Resize<a name="Resize"></a>
 !!! function "void Resize(uint32 SizeX, uint32 SizeY, uint32 SizeZ)"
 
-    <summary>
-    IMPORTANT: Resize will delete all currently stored data and create a new array
-    </summary>
+    
+    !!! warning "Attention"
+             Resize will delete all currently stored data and create a new array.
     
 
