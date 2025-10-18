@@ -18,7 +18,7 @@ Helper class to handle 3 dimensional arrays.
 
 | Name | Description |
 | ---- | ----------- |
-| [Resize](#Resize) | Resizes the array in all three axis #### Admonitions !!! warning "Attention" Resize will delete all currently stored data and create a new array.  |
+| [Resize](#Resize) | Resizes the array in all three axis !!! warning Resize will delete all currently stored data and create a new array.  |
 
 ## Function Details
 
@@ -27,11 +27,9 @@ Helper class to handle 3 dimensional arrays.
 
     Resizes the array in all three axis
     
-    #### Admonitions
     
+    !!! warning
     
-    !!! warning "Attention"
-        
         Resize will delete all currently stored data and create a new array.
     
 
