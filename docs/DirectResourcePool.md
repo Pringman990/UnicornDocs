@@ -14,19 +14,20 @@ Resource pool with direct pointer access to the resource.
 
 | Name | Description |
 | ---- | ----------- |
-| [Clear](#Clear) | <summary> Deletes all resources in this pool </summary> <typeparam name="...Args"></typeparam> <param name="Handle"></param> <param name="OnRemove"></param> <param name="...args"></param>  |
+| [Clear](#Clear) | Deletes all resources in this pool. |
 
 ## Function Details
 
 ### Clear<a name="Clear"></a>
 !!! function "template&lt;typename Fn, typename... Args&gt; void Clear(Fn OnRemove, Args&amp;&amp;... args)"
 
-    <summary>
-    Deletes all resources in this pool
-    </summary>
-    <typeparam name="...Args"></typeparam>
-    <param name="Handle"></param>
-    <param name="OnRemove"></param>
-    <param name="...args"></param>
+    Deletes all resources in this pool.
+    
+    
+    :material-code-tags: `OnRemove`
+    :    Remove function for specialized deletion of resource.
+        
+    :material-code-tags: `Args`
+    :    If the OnRemove function needs to take in arguments.
     
 
