@@ -7,6 +7,7 @@ generator: doxide
 
 **template&lt;typename T&gt; class DirectResourcePool**
 
+Resource pool with direct pointer access to the resource.
 
 
 ## Functions
