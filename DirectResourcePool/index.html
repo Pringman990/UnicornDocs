@@ -554,7 +554,7 @@
 <tbody>
 <tr>
 <td><a href="#Clear">Clear</a></td>
-<td><summary> Deletes all resources in this pool </summary> <typeparam name="...Args"></typeparam> <param name="Handle"></param> <param name="OnRemove"></param> <param name="...args"></param></td>
+<td>Deletes all resources in this pool.</td>
 </tr>
 </tbody>
 </table>
@@ -562,13 +562,13 @@
 <h3 id="clear">Clear<a name="Clear"></a></h3>
 <div class="admonition function">
 <p class="admonition-title">template&lt;typename Fn, typename... Args&gt; void Clear(Fn OnRemove, Args&amp;&amp;... args)</p>
-<p><summary>
-Deletes all resources in this pool
-</summary>
-<typeparam name="...Args"></typeparam>
-<param name="Handle"></param>
-<param name="OnRemove"></param>
-<param name="...args"></param></p>
+<p>Deletes all resources in this pool.</p>
+<dl>
+<dt><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg></span> <code>OnRemove</code></dt>
+<dd>Remove function for specialized deletion of resource.</dd>
+<dt><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg></span> <code>Args</code></dt>
+<dd>If the OnRemove function needs to take in arguments.</dd>
+</dl>
 </div>
 
 
