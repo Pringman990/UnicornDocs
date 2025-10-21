@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../ImageDecoder/">
+        <link rel="prev" href="../ResourcePool/">
       
       
-        <link rel="next" href="../TextureFactory/">
+        <link rel="next" href="../global/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>ResourcePool - Unicorn Docs</title>
+        <title>TextureFactory - Unicorn Docs</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#resourcepool" class="md-skip">
+        <a href="#texturefactory" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ResourcePool
+              TextureFactory
             
           </span>
         </div>
@@ -339,6 +339,28 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../ResourcePool/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ResourcePool
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -351,95 +373,7 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    ResourcePool
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    ResourcePool
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Functions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#function-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Function Details
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Function Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#clear" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clear
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../TextureFactory/" class="md-nav__link">
         
   
   
@@ -450,6 +384,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -529,47 +464,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Functions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#function-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Function Details
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Function Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#clear" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clear
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -584,36 +478,9 @@
 
 
 
-<h1 id="resourcepool">ResourcePool</h1>
-<p><strong>template&lt;typename T&gt; class ResourcePool : public IResourcePool</strong></p>
-<p>Resource pool where direct pointer access is not allowed.</p>
-<h2 id="functions">Functions</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#Clear">Clear</a></td>
-<td>Deletes all resources in this pool.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="function-details">Function Details</h2>
-<h3 id="clear">Clear<a name="Clear"></a></h3>
-<div class="admonition function">
-<p class="admonition-title">template&lt;typename Fn, typename... Args&gt; void Clear(Fn OnRemove, Args&amp;&amp;... args)</p>
-<p>Deletes all resources in this pool.</p>
-<dl>
-<dt><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg></span> <code>OnRemove</code></dt>
-<dd>Remove function for specialized deletion of resource.</dd>
-<dt><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg></span> <code>Args</code></dt>
-<dd>If the OnRemove function needs to take in arguments.</dd>
-</dl>
-</div>
+<h1 id="texturefactory">TextureFactory</h1>
+<p><strong>class TextureFactory</strong></p>
+<p>Handles creating GPUTexture, does not handle Texture assets.</p>
 
 
 

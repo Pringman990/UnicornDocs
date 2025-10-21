@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../ImageDecoder/">
+        <link rel="prev" href="../DirectResourcePool/">
       
       
-        <link rel="next" href="../TextureFactory/">
+        <link rel="next" href="../ResourcePool/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>ResourcePool - Unicorn Docs</title>
+        <title>ImageDecoder - Unicorn Docs</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#resourcepool" class="md-skip">
+        <a href="#imagedecoder" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ResourcePool
+              ImageDecoder
             
           </span>
         </div>
@@ -317,28 +317,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../ImageDecoder/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ImageDecoder
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -356,7 +334,7 @@
   
   
   <span class="md-ellipsis">
-    ResourcePool
+    ImageDecoder
     
   </span>
   
@@ -369,7 +347,7 @@
   
   
   <span class="md-ellipsis">
-    ResourcePool
+    ImageDecoder
     
   </span>
   
@@ -411,9 +389,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#clear" class="md-nav__link">
+  <a href="#loadimage" class="md-nav__link">
     <span class="md-ellipsis">
-      Clear
+      LoadImage
     </span>
   </a>
   
@@ -428,6 +406,28 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ResourcePool/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ResourcePool
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -555,9 +555,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#clear" class="md-nav__link">
+  <a href="#loadimage" class="md-nav__link">
     <span class="md-ellipsis">
-      Clear
+      LoadImage
     </span>
   </a>
   
@@ -584,9 +584,13 @@
 
 
 
-<h1 id="resourcepool">ResourcePool</h1>
-<p><strong>template&lt;typename T&gt; class ResourcePool : public IResourcePool</strong></p>
-<p>Resource pool where direct pointer access is not allowed.</p>
+<h1 id="imagedecoder">ImageDecoder</h1>
+<p><strong>class ImageDecoder</strong></p>
+<p>Decoder for multiple different image formats.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Supported image formats include: png, jpeg.</p>
+</div>
 <h2 id="functions">Functions</h2>
 <table>
 <thead>
@@ -597,22 +601,17 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#Clear">Clear</a></td>
-<td>Deletes all resources in this pool.</td>
+<td><a href="#LoadImage">LoadImage</a></td>
+<td>Loads image data from buffer.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="function-details">Function Details</h2>
-<h3 id="clear">Clear<a name="Clear"></a></h3>
+<h3 id="loadimage">LoadImage<a name="LoadImage"></a></h3>
 <div class="admonition function">
-<p class="admonition-title">template&lt;typename Fn, typename... Args&gt; void Clear(Fn OnRemove, Args&amp;&amp;... args)</p>
-<p>Deletes all resources in this pool.</p>
-<dl>
-<dt><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg></span> <code>OnRemove</code></dt>
-<dd>Remove function for specialized deletion of resource.</dd>
-<dt><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg></span> <code>Args</code></dt>
-<dd>If the OnRemove function needs to take in arguments.</dd>
-</dl>
+<p class="admonition-title">ImageDecodeData LoadImage(const ByteBuffer&amp; Buffer)</p>
+<p>Loads image data from buffer.
+    ImageDecodeData will be invalid if the buffer could not be read.</p>
 </div>
 
 
